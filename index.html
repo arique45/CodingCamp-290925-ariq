@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+
+    <!-- css -->
+    <link rel="stylesheet" href="CSS/style.css">
+
+    <!-- css tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <!-- backgound image -->
+     <div class="container min-h-screen flex items-center justify-center bg-[url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1500&q=80')] bg-cover bg-center">
+
+    <div class="bg-white/30 backdrop-blur-lg shadow-[0_0_40px_10px_rgba(59,130,246,0.3)] rounded-2xl p-8 w-full max-w-xl border border-white/40 todo-card">
+            
+                    <h1 class="text-3xl font-bold mb-6 flex justify-center">To-Do List</h1>
+           
+          
+            <div class="input-section flex flex-col sm:flex-row space-y-2 sm:space-y-0 sm:space-x-2 mb-4">
+                <input type="text" id="taskinput" placeholder="Enter a new task" class="border rounded px-3 py-2 flex-grow">
+                <input type="date" name="dateinput" id="dateinput" class="border rounded px-3 py-2">
+                <button id="addTaskBtn" class="bg-blue-500 text-white rounded w-10 h-10 flex items-center justify-center text-xl font-bold">+</button>
+            </div>
+
+
+            
+            <div class="grid grid-cols-6 gap-4 mb-4">
+                <!-- Filter (left) -->
+                <div class="col-start-1 col-end-3 mb-4">
+                    <select id="filter" class="border rounded px-3 py-2 col-start-1 col-end-3">
+                        <option value="all">All Tasks</option>
+                        <option value="completed">Completed Tasks</option>
+                        <option value="incomplete">Incomplete Tasks</option>
+                        <option value="ascending">Date Ascending</option>
+                        <option value="descending">Date Descending</option>
+                    </select>
+                </div>
+                <!-- Delete All button (right) -->
+                <div class="col-span-2 col-end-7 flex justify-end  mb-4">
+                    <button id="deleteAll" class=" bg-red-500 text-white px-4 py-2 rounded">Delete All</button>
+                </div>
+            </div>
+
+                
+
+           
+                
+                    <div class="border p-4 tasks-wrapper">
+                        <ul id="taskList" class="list-none p-0 m-0">
+                            <!-- Tasks will be dynamically added here -->
+                        </ul>
+                    </div>
+                
+            
+            
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+            <footer>
+                <p class="footer">&copy; 2025 arique03 </p>
+            </footer>
+        </div>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    </div>
+
+    <script src="JS/script.js"></script>
+</body>
+</html>

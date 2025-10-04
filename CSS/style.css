@@ -1,0 +1,32 @@
+.container {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 20px;
+    background-color: #f9f9f900;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0);
+}
+
+.footer {
+    text-align: center;
+    color: #f8f8f8ab;
+    font-size: 0.9em;
+    margin-top: 20px;
+}
+
+/* Tasks wrapper: allow vertical scrolling when max-height is set by JS */
+.tasks-wrapper {
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+/* Optional scrollbar styling (WebKit) */
+.tasks-wrapper::-webkit-scrollbar {
+    width: 8px;
+}
+.tasks-wrapper::-webkit-scrollbar-thumb {
+    background: rgba(0,0,0,0.12);
+    border-radius: 6px;
+}
+
